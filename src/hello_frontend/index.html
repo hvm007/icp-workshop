@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana Trading</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        main {
+            padding: 2rem;
+        }
+        footer {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .stock-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+        }
+        .stock-table th, .stock-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .stock-table th {
+            background-color: #333;
+            color: white;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        .credits {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            color: #666;
+        }
+        .portfolio-summary {
+            margin-top: 2rem;
+        }
+        .contact-form {
+            margin-top: 2rem;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #333;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Banana Trading</h1>
+        <p>Your go-to platform for stock trading!</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#market">Market</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Welcome to Banana Trading</h2>
+            <p>Track and trade your favorite stocks with ease.</p>
+            <div class="image-container">
+                <img src="https://image.freepik.com/free-vector/cool-cartoon-banana-with-sunglasses_14588-379.jpg?w=2000" alt="Cool Cartoon Banana with Sunglasses">
+                <div class="credits">
+                    Image credit: <a href="https://www.freepik.com/free-vector/cool-cartoon-banana-with-sunglasses_14588-379.htm">Freepik</a>
+                </div>
+            </div>
+        </section>
+        <section id="market">
+            <h2>Market Overview</h2>
+            <table class="stock-table">
+                <thead>
+                    <tr>
+                        <th>Stock</th>
+                        <th>Price</th>
+                        <th>Change</th>
+                        <th>Volume</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Apple (AAPL)</td>
+                        <td>$150.00</td>
+                        <td>+1.5%</td>
+                        <td>1,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>Google (GOOGL)</td>
+                        <td>$2,800.00</td>
+                        <td>-0.5%</td>
+                        <td>500,000</td>
+                    </tr>
+                    <tr>
+                        <td>Amazon (AMZN)</td>
+                        <td>$3,300.00</td>
+                        <td>+2.0%</td>
+                        <td>750,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="portfolio">
+            <h2>Your Portfolio</h2>
+            <div class="portfolio-summary">
+                <p>Manage your investments and track your performance.</p>
+                <table class="stock-table">
+                    <thead>
+                        <tr>
+                            <th>Stock</th>
+                            <th>Shares</th>
+                            <th>Average Price</th>
+                            <th>Current Price</th>
+                            <th>Change</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Apple (AAPL)</td>
+                            <td>50</td>
+                            <td>$140.00</td>
+                            <td>$150.00</td>
+                            <td>+7.1%</td>
+                        </tr>
+                        <tr>
+                            <td>Google (GOOGL)</td>
+                            <td>10</td>
+                            <td>$2,750.00</td>
+                            <td>$2,800.00</td>
+                            <td>+1.8%</td>
+                        </tr>
+                        <tr>
+                            <td>Amazon (AMZN)</td>
+                            <td>5</td>
+                            <td>$3,200.00</td>
+                            <td>$3,300.00</td>
+                            <td>+3.1%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to us at <a href="mailto:support@bananatrading.com">support@bananatrading.com</a> or use the form below.</p>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Banana Trading. All rights reserved.</p>
+    </footer>
+</body>
+</html>
